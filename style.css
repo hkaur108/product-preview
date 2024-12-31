@@ -13,7 +13,13 @@
 }
 
 body{
-    background-color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+  height:100vh;
+  background-color: var(--cream);
 }
 
 .fraunces-bold {
@@ -59,6 +65,8 @@ body{
     width: 344px;
     height: 600px;
     margin:30px 15px;
+    transition: all 0.2s ease-in;
+
 }
 
 .image-content{
@@ -96,8 +104,8 @@ body{
   margin-bottom: 10px;
 }
 
-.paragraph p {
-  color: var(--darkgrey);
+.top-content p {
+  color: var(--mediumlightgrey);
   font-size: 1em;
   font-weight: 500;
   line-height: 20px;
@@ -136,6 +144,8 @@ body{
   padding-right: 80px;
   width: 300px;
 }
+
+
 .button .button-pd {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -161,6 +171,7 @@ body{
      margin-right: auto;
      margin-top: 150px;
      margin-bottom: auto;
+     transition: all 0.2s ease-in;
   }
   .image-content {
      width: 300px;
@@ -210,7 +221,10 @@ body{
   color: var(--white);
   font-weight: 500;
 }
-
+button:hover{
+  cursor: pointer;
+  background-color: rgb(29, 59, 29);
+}
 .attribution{
     margin-top:4rem;
 }
